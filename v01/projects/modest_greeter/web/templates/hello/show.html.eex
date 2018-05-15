@@ -1,4 +1,9 @@
 <div class="card m-3">
+  <div class="text-center">
+  <%= tag :img, src: static_path(@conn, "/images/modest_greeter.svg"), 
+      alt: "Robot", width: "320", height: "320",
+      class: "card-image-top mx-auto" %>
+  </div>
   <div class="card-body text-white bg-success">
     <p class="card-text lead">
       <i class="fa fa-smile-o"></i>
