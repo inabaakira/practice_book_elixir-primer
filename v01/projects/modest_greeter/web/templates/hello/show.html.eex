@@ -1,7 +1,7 @@
 <div class="card m-3">
   <div class="text-center">
   <%= tag :img, src: static_path(@conn, "/images/modest_greeter.svg"), 
-      alt: "Robot", width: "320", height: "320",
+      alt: "Robot", style: "width: 100%; max-width: 320px",
       class: "card-image-top mx-auto" %>
   </div>
   <div class="card-body text-white bg-success">
