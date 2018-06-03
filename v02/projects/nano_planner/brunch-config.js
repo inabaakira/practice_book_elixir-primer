@@ -54,6 +54,9 @@ exports.config = {
     babel: {
       // Do not use ES6 compiler in vendor code
       ignore: [/web\/static\/vendor/]
+    },
+    copycat: {
+      fonts: ["node_modules/font-awesome/fonts"]
     }
   },
 
@@ -64,6 +67,14 @@ exports.config = {
   },
 
   npm: {
-    enabled: true
+    enabled: true,
+    styles: {
+      bootstrap: ["dist/css/bootsrap.css"]
+    },
+    globals: {
+      $: "jquery",
+      jQuery: "jquery",
+      Tether: "tether"
+    }
   }
 };
