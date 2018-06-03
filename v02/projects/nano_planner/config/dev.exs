@@ -36,8 +36,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :nano_planner, NanoPlanner.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "nano_planner",
+  password: "nano_planner",
   database: "nano_planner_dev",
   hostname: "localhost",
   pool_size: 10

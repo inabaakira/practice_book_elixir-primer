@@ -36,7 +36,7 @@ defmodule NanoPlanner.Mixfile do
      {:postgrex, ">= 0.0.0"},
      {:phoenix_html, "~> 2.6"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
-     {:gettext, "~> 0.11"},
+     {:gettext, "~> 0.14.1"},
      {:cowboy, "~> 1.0"}]
   end
 
