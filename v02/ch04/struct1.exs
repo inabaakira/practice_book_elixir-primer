@@ -1,16 +1,8 @@
-# m = %{name: "foo", email: "foo@example.com"}
-# m = %{:name => "foo", :email => "foo@example.com"}
-# m = %{:name => "foo", :email => "foo@example.com", :password => "xyz"}
-# m = %{"name" => "foo", "email" => "foo@example.com"}
 m = %{name: "foo", email: "foo@example.com"}
-# u = %User{name: "foo", email: "foo@example.com"}
-# u = %User{:name => "foo", :email => "foo@example.com"}
-# u = %User{:name => "foo", :email => "foo@example.com", :password => "xyz"}
-# u = %User{"name" => "foo", "email" => "foo@example.com"}
+# m = %{m | email: "bar@example.com"}
+m = Map.merge(m, %{email: "bar@example.com"})
 u = %User{name: "foo", email: "foo@example.com"}
-# IO.inspect m
-# IO.inspect m.email
-IO.inspect m[:email]
-# IO.inspect u
-# IO.inspect u.email
-IO.inspect u[:email]
+# u = %User{u | email: "bar@example.com"}
+u = Map.merge(u, %{email: "bar@example.com"})
+IO.inspect m
+IO.inspect u
